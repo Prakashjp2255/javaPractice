@@ -1,6 +1,11 @@
 package probsolving;
 
 public class count_frequency {
+
+    // Count frequency of each element in the array
+    // Output: 10  3
+	//  5  2
+    //     15  1
      public static void main (String[] args){
 
         int arr[]= {10,5,15,10,15,5};

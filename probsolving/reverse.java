@@ -3,6 +3,10 @@ package probsolving;
 public class reverse {
     static int[] rev_array (int[] arr){
 
+        // Reverse a given Array
+        // Input: N = 5, arr[] = {5,4,3,2,1}
+        // Output: {1,2,3,4,5}
+        
         int l = 0 , r = arr.length -1 ;
 
         while (l<r){

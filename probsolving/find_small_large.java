@@ -3,6 +3,11 @@ package probsolving;
 import java.util.Arrays;
 
 public class find_small_large {
+
+//     Find Second Smallest and Second Largest Element in an array
+//     Input: [1,2,4,7,7,5]
+// Output: Second Smallest : 2
+// 	Second Largest : 5
      public static void main (String[] args){
 
         int arr[] ={3,9,2,10,18,1} ;
