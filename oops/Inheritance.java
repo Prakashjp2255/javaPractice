@@ -24,8 +24,14 @@ interface system {
     }
 
 public class Inheritance {    public static void main(String[] args) {
+
         // inheritance is one class (properties and methods ) are same in other class
-       
+        // there are many types of inheritancce 
+        //    --> single level 
+        //    --> multi level 
+        //    --> multiple   --------- interface use panni tha pannuvom 
+        //    --> hierachical 
+
        car obj2 = new car();
        obj2.brake();
        obj2.acclator();
