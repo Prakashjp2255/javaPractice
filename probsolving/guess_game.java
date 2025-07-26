@@ -1,17 +1,12 @@
 
 package probsolving;
 
-import java.awt.*;
 import java.util.*;
 
 
 public class guess_game {
    
-
-
-
-
-    public static void main (String [] args) {
+public static void main (String [] args) {
         //guess the word
         // i gave one
         // --> get user input
@@ -20,11 +15,11 @@ public class guess_game {
 
         Scanner scan = new Scanner(System.in);
         System.out.println();
-        System.out.println("  Welcome to word Game ");
-        System.out.println("  Find the word if the word guessing is right !   ");
-        System.out.println("  You'll get a point   ");
+        System.out.println("  Welcome to word Game ".toUpperCase());
+        System.out.println("  Find the word if the word guessing is right !   ".toUpperCase());
+        System.out.println("  You'll get a point   ".toUpperCase());
         System.out.println();
-        System.out.println("  Press 1 to start a game .....");
+        System.out.println("  Press 1 to start a game .....".toUpperCase());
         System.out.println();
 
         int a = scan.nextInt();
@@ -32,35 +27,58 @@ public class guess_game {
 
         while (a == 1 ){
 
-            String ans[] = {"FARM", "PLUG" , "SEA" , "NIPPON" , "HARM"};
+            String ans[] = {"FORK", "PLAN" , "SEA" , "HAPPY" , "BOOKS"};
 
-            System.out.println(".....Ok lets start the game.....");
+            String ques[] = {" What's your guess   F _ _ K   ?  " ,
+                    " What's your guess   P _ _ N   ?  " ,
+                    " What's your guess   S E _    ?  " ,
+                    " What's your guess   H _ _ _ Y   ?  ",
+                    " What's your guess   B O O _ S  ?  "};
 
-            String ques[] = {" What's your guess   F _ _ _   ?  " ,
-                             " What's your guess   P _ _ _   ?  " ,
-                             " What's your guess   S _ _    ?  " ,
-                             " What's your guess   N _ P _ O _   ?  ",
-                             " What's your guess   H _ _ _   ?  "};
+            Random random = new Random();
+
+            System.out.println(".....Ok lets start the game....." .toUpperCase());
+
+
 
             String s = scan.nextLine();
             String temp = s.toUpperCase();
 
-            for (int i =0 ;i<ques.length; i++ ){
-                
-            }
+            for (int i =0 ;i<ans.length; i++ ){
+                System.out.println(ques[i]);
+                System.out.println(" Enter your answer : ".toUpperCase());
+                String answer = scan.nextLine();
+                String temp1  = answer.toUpperCase();
 
-
-            for(int i = 0 ; i<ans.length; i++){
-                if (temp == ans[i]){
+                if(Objects.equals(temp1 ,ans[i])){
+                    System.out.println( " ۞ ۞ Correct ۞ ۞ " .toUpperCase());
                     count++ ;
+                }else {
+                    System.out.println(" Your ans is wrong ".toUpperCase());
+                    System.out.println(" The ans is : "  + ans[i] .toUpperCase()) ;
+
+                    System.out.println();
                 }
+
             }
-            System.out.println("yeah you ");
+            if(count == 0 ){
+                System.out.println("dirty minded ^_^ 😂😂👌".toUpperCase());
+                System.out.println();
+            }
+
+            System.out.println("yeah you get a ".toUpperCase() + count  + " points" .toUpperCase());
+            System.out.println("press 1 to Play Again , or any other no to exit " .toUpperCase());
+
+             a = scan.nextInt();
+
+            if (a==1){
+                count = 0;
+            }
 
 
         }
         String s = scan.nextLine();
-
+        System.out.println("Yeah Thanks for Playing " .toUpperCase());
     }
-}
+ }
 
