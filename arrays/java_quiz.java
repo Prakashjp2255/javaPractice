@@ -11,7 +11,7 @@ public class java_quiz {
         };
 
         Scanner scan = new Scanner(System.in);
-        String[] answers = { "Directing internet traffic" , "CPU" , "2004" , "charles babbage" , "fortran"};
+        String[] answers = { "Directing internet traffic" , "cpu" , "2004" , "charles babbage" , "fortran"};
         System.out.println("WELCOME TO JAVA QUIZ GAME !");
 
         String guess ;
