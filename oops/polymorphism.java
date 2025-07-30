@@ -6,7 +6,7 @@ package oops;
 //              1 ---> method overloading  -- same name , same method , different parameter 
 //              2 ---> method overriding   -- same name , same method , same parameter but diffferent behaviour 
 
-class calculator {
+class calculator1 {
     int add(int a, int b) {
         return a + b;
     }
@@ -19,7 +19,7 @@ class calculator {
 
 public class polymorphism {
     public static void main(String[] args) {
-        calculator obj = new calculator();
+        calculator1 obj = new calculator1();
         System.out.println(obj.add(2, 3));
         System.out.println(obj.add(2.5, 8.7, 9.7));
 
